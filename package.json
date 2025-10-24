@@ -13,10 +13,9 @@
     "medusa"
   ],
   "scripts": {
-    "build": "medusa build --backend-only",
-    "build:admin": "medusa build --admin",
+    "build": "medusa build",
     "seed": "medusa exec ./src/scripts/seed.ts",
-    "start": "PORT=${PORT:-9000} medusa start --backend-only",
+    "start": "PORT=${PORT:-9000} medusa start",
     "dev": "medusa develop",
     "db:migrate": "medusa db:migrate",
     "test:integration:http": "TEST_TYPE=integration:http NODE_OPTIONS=--experimental-vm-modules jest --silent=false --runInBand --forceExit",

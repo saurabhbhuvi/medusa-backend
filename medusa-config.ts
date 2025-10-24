@@ -13,4 +13,7 @@ module.exports = defineConfig({
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",
     }
   },
+  admin: process.env.NODE_ENV === 'production' ? undefined : {
+    path: "/app"
+  }
 })
