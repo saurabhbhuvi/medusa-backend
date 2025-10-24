@@ -1,0 +1,26 @@
+services:
+  # Medusa Backend API
+  - type: web
+    name: medusa-backend
+    env: node
+    plan: starter
+    buildCommand: yarn install && yarn build
+    startCommand: yarn start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: DATABASE_URL
+        value: postgresql://postgres.uydlqgdvowwrstsflzpl:Saurabh2026@aws-1-ap-south-1.pooler.supabase.com:5432/postgres
+      - key: JWT_SECRET
+        generateValue: true
+      - key: COOKIE_SECRET
+        generateValue: true
+      - key: STORE_CORS
+        value: https://medusa-storefront.onrender.com
+      - key: ADMIN_CORS
+        value: https://medusa-admin.onrender.com
+      - key: AUTH_CORS
+        value: https://medusa-admin.onrender.com
