@@ -19,8 +19,8 @@ services:
       - key: COOKIE_SECRET
         generateValue: true
       - key: STORE_CORS
-        value: https://medusa-storefront.onrender.com
+        value: https://your-storefront-url.com
       - key: ADMIN_CORS
-        value: https://medusa-admin.onrender.com
+        value: https://your-admin-url.com
       - key: AUTH_CORS
-        value: https://medusa-admin.onrender.com
+        value: https://your-admin-url.com

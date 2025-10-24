@@ -14,7 +14,7 @@ This guide will help you deploy your Medusa backend to Render using your existin
 Your deployment will include:
 
 - **🗄️ Supabase PostgreSQL Database**: Your existing database
-- **🔧 Medusa Backend API**: Medusa server (port 9000)
+- **🔧 Medusa Backend API**: Medusa server
 
 ## 📦 Step 1: Prepare Your Repository
 
@@ -32,6 +32,7 @@ Ensure your repository has:
 ├── package.json             # Dependencies
 ├── medusa-config.ts         # Configuration
 ├── render.yaml              # Render configuration
+├── deploy.sh                # Deployment script
 └── DEPLOYMENT.md            # This file
 ```
 

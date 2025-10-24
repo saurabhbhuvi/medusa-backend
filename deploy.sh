@@ -34,9 +34,7 @@ render blueprint create medusa-backend-blueprint \
     --name "Medusa Backend API" \
     --description "Medusa backend API with Supabase database" \
     --repo "https://github.com/$GITHUB_REPO" \
-    --branch main \
-    --build-command "" \
-    --start-command ""
+    --branch main
 
 echo "✅ Blueprint created successfully!"
 echo ""
